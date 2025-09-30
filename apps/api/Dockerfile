@@ -12,7 +12,7 @@ RUN bun install
 COPY . .
 
 # Build the API
-RUN bunx nx build api
+RUN bunx nx build api --skip-nx-cache
 
 # Expose port
 EXPOSE 3001

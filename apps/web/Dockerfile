@@ -12,7 +12,7 @@ RUN bun install
 COPY . .
 
 # Build the web app
-RUN bunx nx build web
+RUN bunx nx build web --skip-nx-cache
 
 # Expose port
 EXPOSE 3000
