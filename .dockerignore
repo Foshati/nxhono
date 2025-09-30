@@ -1,0 +1,7 @@
+node_modules
+.nx
+dist
+.git
+.env
+*.log
+bun.lockb
