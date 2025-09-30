@@ -12,6 +12,8 @@ RUN bun install
 COPY . .
 
 # Build the web app
+ENV NX_CLOUD_ACCESS_TOKEN=false
+ENV NX_DAEMON=false
 RUN bunx nx build web --skip-nx-cache
 
 # Expose port
