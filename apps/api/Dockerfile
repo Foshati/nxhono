@@ -21,7 +21,7 @@ ENV CI=true
 RUN bunx nx build api --skip-nx-cache --no-cloud
 
 # Expose port
-EXPOSE 3001
+EXPOSE 3002
 
 # Start the application
 CMD ["node", "apps/api/dist/main.js"]
