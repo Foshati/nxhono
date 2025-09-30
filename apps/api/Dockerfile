@@ -15,8 +15,10 @@ COPY . .
 ENV NX_CLOUD_ACCESS_TOKEN=false
 ENV NX_DAEMON=false
 ENV NX_SKIP_NX_CACHE=true
+ENV NX_CLOUD_NO_TIMEOUTS=true
+ENV NX_NO_CLOUD=true
 ENV CI=true
-RUN bunx nx build api --skip-nx-cache --verbose
+RUN bunx nx build api --skip-nx-cache --no-cloud
 
 # Expose port
 EXPOSE 3001

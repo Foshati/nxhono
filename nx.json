@@ -12,7 +12,7 @@
       "{workspaceRoot}/.gitlab-ci.yml"
     ]
   },
-  "nxCloudId": "68dbda923538ea25f8445919",
+
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
